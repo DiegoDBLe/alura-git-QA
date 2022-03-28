@@ -48,7 +48,7 @@
 
 	}
 
-	var segredos = sorteiaNumeros(5);
+	var segredos = sorteiaNumeros(3);
 	//console.log(segredos); Para verificar no console da pagina.
 
 	var input = document.querySelector('input');
@@ -62,14 +62,14 @@
 
 			if(input.value == segredos[posicao]){
 
-				alert('PARABÉNS!!! VOCÊ ACERTOU O NÚMERO.');
+				alert('PARABÉNS!!!VOCÊ ACERTOU O NÚMERO.');
 				achou = true;
 				break;
 			}
 		}
 		if(achou == false){
 
-			alert('INFELIZMENTE VOCÊ ERROU!!...TENTE NOVAMENTE!');
+			alert('VOCÊ ERROU!!...TENTE NOVAMENTE!');
 		}
 
 		input.value = '';
